@@ -6,7 +6,7 @@ public class Kafe26 {
         Scanner sc = new Scanner(System.in);
         Menu("Andi", true, "DISKON50");
         daftarPangunjung("Ali","Budi","citra");
-        
+
         int totalKeseluruhan = 0;
         String pilihanLain = "ya"; 
 
@@ -53,8 +53,8 @@ public class Kafe26 {
     }
     public static void daftarPangunjung(String... namaPengunjung) {
         System.out.println("Daftar Nama Pengunjung: ");
-        for (int i = 0; i < namaPengunjung.length; i++) {
-            System.out.println("-" + namaPengunjung[1]);
-        }
+       for (String nama : namaPengunjung) {
+        System.out.println("-" + nama);
+       }
     }
 }
